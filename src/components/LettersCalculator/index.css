@@ -1,0 +1,111 @@
+.bg-container {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15% 24px 15% 24px;
+  overflow-y: auto;
+  font-family: 'Roboto';
+}
+@media (max-width: 768px) {
+  .letters-calculator-img {
+    width: 100%;
+  }
+  .calculating-letters-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+  }
+  .heading {
+    text-align: center;
+    font-size: calc(21px + 0.5vw);
+  }
+  .title {
+    font-size: 0.01rem;
+    font-weight: bold;
+    margin-left: -131px;
+    margin-bottom: 8px;
+  }
+  #phrase {
+    color: #e4e7eb;
+    width: 100%;
+    height: 32px;
+    padding: 10px;
+    background-color: transparent;
+    border: solid 1px #ffffff;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  #phrase:focus {
+    outline: none;
+  }
+  .calculating-letters {
+    color: #219a6f;
+    background-color: #ffffff;
+    height: 54px;
+    width: 199px;
+    border-radius: 10px;
+    align-content: center;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+  }
+}
+@media (min-width: 991px) {
+  .bg-container {
+    flex-direction: row;
+    justify-content: center;
+    padding: 60px;
+  }
+  .letters-calculator-img {
+    width: 54%;
+    order: 1;
+  }
+  .calculating-letters-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #ffffff;
+  }
+  .heading {
+    text-align: left;
+    font-size: 59px;
+  }
+  .title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  #phrase {
+    color: #e4e7eb;
+    padding: 10px;
+    background-color: transparent;
+    border: solid 1px #ffffff;
+    border-radius: 6px;
+    width: 436px;
+    height: 49px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #phrase:focus {
+    outline: none;
+  }
+  .calculating-letters {
+    color: #219a6f;
+    background-color: #ffffff;
+    height: 64px;
+    width: 290px;
+    border-radius: 10px;
+    align-content: center;
+    text-align: center;
+    font-size: 29px;
+    font-weight: bold;
+  }
+}
